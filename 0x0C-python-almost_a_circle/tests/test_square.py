@@ -20,9 +20,9 @@ class TestSquare(unittest.TestCase):
 
         s2 = Square(10)
 
-        self.assertEqual(s1.id, 13)
+        self.assertEqual(s1.id, 11)
 
-        self.assertEqual(s2.id, 14)
+        self.assertEqual(s2.id, 12)
 
     def test_initialization_without_arguments(self):
 

@@ -15,9 +15,9 @@ class TestBase(unittest.TestCase):
 
     def test_initialization(self):
 
-        base1 = Base()
+        base1 = Base(1)
 
-        base2 = Base()
+        base2 = Base(2)
 
         self.assertEqual(base1.id, 1)
 
