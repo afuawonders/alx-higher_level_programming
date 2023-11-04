@@ -11,8 +11,8 @@ if __name__ == "__main__":
     commits = m.json()
     try:
         for i in range(10):
-            sha = commits[i]['sha']
-            author_name = commits[i]['commit']['author']['name']
-            print(f"{sha}:\n{author_name}")
+            print("{}: {}".format(
+                commits[i].get("sha"),
+                commits[i].get("commit").get("author").get("name")))
     except IndexError:
         pass
